@@ -1,0 +1,155 @@
+.main{
+  background-color: gray;
+  background-image: url("https://roohome.com/wp-content/uploads/2016/12/Insight-Studio.jpg");
+  background: size 50;
+        width:100%;
+        background-position:center;
+        background-blend-mode: multiply;
+}
+
+/* home */
+.header{
+    margin:0px;
+    color:white;
+    padding-top:20px;
+    padding-left:20px;
+    /* text-align: left; */
+}
+
+.text-header{
+font-size: -webkit-xxx-large;
+padding-top: 20px;
+}
+
+.text{
+    text-align:center;
+    opacity: 0;
+}
+
+:host {
+  display: block;
+}
+
+.open-close-container {
+  margin-top: 1em;
+  margin-left: 60px;
+  color: #000000;
+  font-weight: bold;
+  font-size:xx-large;
+  color: white;
+}
+
+img {
+  filter: grayscale(100%) contrast(100%);
+}
+
+
+
+
+
+
+img.carousel-image {
+  height: 600px;
+}
+
+@media screen and (min-width: 200px) {
+  img.carousel-image {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  img.carousel-image {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  img.carousel-image {
+    height: 600px;
+  }
+}
+
+
+
+
+/* poioi eimaste */
+.container-header{
+margin-top: 45px;
+margin-left: 30px;
+font-weight: 600;
+font-size: 32px;
+}
+
+.about-content{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-family: Open Sans,sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .section-header{
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    color: #111;
+    margin-top:10px;
+margin-left: 55px;
+font-weight: 500;
+  }
+
+
+  .coach{
+    margin-left: 55px !important;
+    margin-top: 0px !important;
+
+  }
+
+  .row{
+    margin-right: 0px;
+  }
+
+  #grayscale{
+    filter:none
+  }
+
+ #cover{
+  opacity: 0;
+  z-index:20;
+ }
+
+#cover:hover{
+  opacity:1;
+  filter: brightness(0.9);
+}
+
+
+
+  /* GALLERY */
+  @media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
+
+    .itemGallery{
+      margin-left: 40px;
+      margin-right: 40px;
+      width:100%;
+    }
+
+
+
+    /* epikoinwnia */
+
+    #map-container-google-11{
+      text-align: center;
+    }
+
+    #map-container-google-11 > iframe{
+width: 95%;
+height:300px;
+    }

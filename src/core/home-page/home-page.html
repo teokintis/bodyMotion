@@ -1,0 +1,475 @@
+
+  <!-- carousel -->
+<div class="container" style="width: 100%; padding-left: 0px; padding-right: 0px; border-top: solid orangered;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" [ngClass]="{'active': selectedItem==0}"></li>
+      <li data-target="#myCarousel" data-slide-to="1" [ngClass]="{'active': selectedItem==1}"></li>
+      <li data-target="#myCarousel" data-slide-to="2" [ngClass]="{'active': selectedItem==2}"></li>
+    </ol>
+
+    <div class="carousel-inner" style="width: 100%;">
+      <div class="item" [ngClass]="{'active': selectedItem==0}">
+        <img class="carousel-image" src="assets/images/mwarki1.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption carousel-image">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+      <div class="item" [ngClass]="{'active': selectedItem==1}">
+        <img class="carousel-image" src="assets/images/plank.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+      <div class="item" [ngClass]="{'active': selectedItem==2}">
+        <img class="carousel-image" src="assets/images/arsi.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption carousel-image">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <button class="left carousel-control" style="border: 0px;" (click)="goToPreviousItem()">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="right carousel-control" style="border: 0px;" (click)="goToNextItem()">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- poioi eimaste -->
+<div id="who" class="container" style="width: 100%; padding-left: 0px; padding-right: 0px; border-top: solid orangered;">
+<div class="row" style="padding-bottom: 40px;">
+  <div class="col-xs-12 col-sm-8">
+    <div class="row container-header">
+      <div class="col-sm-12">
+          <span>ΠΟΙΟΙ ΕΙΜΑΣΤΕ</span>
+      </div>
+  </div>
+    <div class="row about-content">
+      <div class=col-sm-12>
+        Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus. Sed elementum dapibus tellus, a dictum metus interdum ac. Nullam condimentum, dui volutpat fringilla molestie, libero tortor ultrices lorem, at tempus diam purus non velit. Aliquam vel nulla eleifend, consequat elit id, tristique massa.
+      </div>
+      
+    </div>
+    <div class="row section-header">
+        <div class="col-sm-12">
+          <i class="material-icons" style="font-size: 28px; font-weight: bold; color: orangered;">
+            done
+            </i>
+          <span>ΠΡΟΠΟΝΗΤΗΣ</span>
+        </div>
+    </div>
+    <div class="row about-content coach">
+      <div class=col-sm-12>
+        Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.
+      </div>
+    </div>
+    
+    <div class="row section-header">
+      <div class="col-sm-12">
+        <i class="material-icons" style="font-size: 28px; font-weight: bold; color: orangered;">
+          done
+          </i>
+        <span>ΕΓΚΑΤΑΣΤΑΣΕΙΣ</span>
+      </div>
+    </div>
+    <div class="row about-content coach">
+    <div class=col-sm-12>
+      Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.
+    </div>
+    </div>
+  </div>
+
+<div  class="col-xs-12 col-sm-4" style="margin-top: 45px; text-align: center;
+position:relative; width:340px; height:320px;">
+  <div class="card" style="position: absolute; left:0; top:0; width:80%;height:100%;">
+    <img id="grayscale" src="assets/images/about-right-img.png" class="card-img-top" alt="..." style="width:100%; height:100%; margin-left:50px;">
+    <div class="card-body">
+    </div>
+  </div>
+
+  <div id="cover" style="background-color:rgba(0, 0, 0, 0.842); position: absolute; left:0; top:0; width:80%;height:100%; margin-left:50px;">
+    <div class="row" style="position:inherit; top:70%; width:100%; left: 10px;">
+      <div class='col-xs-4'>
+        <a href=""><img id="grayscale" src="assets/images/facebook.png"
+          style="font-size: 55px;
+          font-weight: bold;
+          cursor:pointer; width:92%;"></a>
+          
+      </div>
+      <div class='col-xs-4'>
+        <a href=""><img id="grayscale" src="assets/images/insta.png"
+          style="font-size: 45px;
+          font-weight: bold;
+          cursor:pointer; width:80%;"></a>
+      </div>
+      <div class='col-xs-4'>
+        <a href=""><img id="grayscale" src="assets/images/twit.png"
+          style="font-size: 45px;
+          font-weight: bold;
+          cursor:pointer; width:80%;"></a>
+      </div>
+
+    </div>
+    
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- programmata -->
+<div id="workout" class="container" style="background-color: orangered;
+width: 100%; padding-left: 0px;
+padding-right: 0px;
+border-top: solid orangered;
+background-image:url(assets/images/woman-workout-fitness.png);
+background-repeat:no-repeat;
+background-position:left;">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="container-header">
+            <span style="color: papayawhip;">ΥΠΗΡΕΣΙΕΣ & <br>ΠΡΟΓΡΑΜΜΑΤΑ</span>
+        </div>
+    </div>
+ 
+    <div class="col-sm-8 col-xs-12" style="padding-top:45px; background-color:rgb(237, 231, 225); padding-bottom: 35px;">
+      <div class="row section-header" style="margin-left: 0px;">
+        <div class="col-sm-12">
+          <span style="padding-right: 25px;">
+            <i class="material-icons" style="color: orangered; font-size: 35px; font-weight: bold;">
+              play_arrow
+              </i>
+            </span>
+          <span>RUNNING</span>
+        </div>
+    </div>
+    <div class="row about-content coach">
+      <div class=col-sm-12>
+        Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.
+      </div>
+    </div>
+    <div class="row section-header" style="margin-left: 0px;">
+      <div class="col-sm-12">
+        <span style="padding-right: 25px;">
+          <i class="material-icons" style="color: orangered; font-size: 35px; font-weight: bold;">
+            play_arrow
+            </i>
+          </span>
+        <span>WEIGHT LIFTING</span>
+      </div>
+  </div>
+  <div class="row about-content coach">
+    <div class=col-sm-12>
+      Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.
+    </div>
+  </div>
+  <div class="row section-header" style="margin-left: 0px;">
+    <div class="col-sm-12">
+      <span style="padding-right: 25px;">
+        <i class="material-icons" style="color: orangered; font-size: 35px; font-weight: bold;">
+          play_arrow
+          </i>
+        </span>
+      <span>PHYSIOPHERAPY<br></span>
+    </div>
+</div>
+<div class="row about-content coach">
+  <div class=col-sm-12>
+    Quisque et lectus pulvinar, porttitor mi non, elementum dui. Morbi mi nisl, tincidunt sed venenatis eget, finibus eu mauris. Nullam nisi lacus, feugiat eget varegeellentesque dictum odio. Sed sollicitudin viverra est, at aliquam metus ultrices id. Duis eu purus vel nisl commodo facilisis vitae ut lectus.
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- gallery -->
+
+<div id="gallery" class="container" style="margin-bottom: 60px; width: 100%; padding-left: 0px; padding-right: 0px; border-top: solid orangered;">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="container-header" style="margin-bottom:40px;">
+            <span>GALLERY</span>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div id="myCarouselGallery" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarouselGallery" data-slide-to="0" [ngClass]="{'active': selectedGalleryItem==0}"></li>
+        <li data-target="#myCarouselGallery" data-slide-to="1" [ngClass]="{'active': selectedGalleryItem==1}"></li>
+        <li data-target="#myCarouselGallery" data-slide-to="2" [ngClass]="{'active': selectedGalleryItem==2}"></li>
+      </ol>
+  
+      <div class="carousel-inner">
+        <div style="margin-left: 0px; margin-right:0px;" class="item itemGallery" [ngClass]="{'active': selectedGalleryItem==0}">
+                  
+          <div class="col-sm-1" style="top:100px;">
+            <a style="cursor: pointer;" (click)="goToPreviousGalleryItem()">
+              <i  style="font-size: 60px; font-weight: bold; color: black;" class="material-icons">
+                chevron_left
+                </i>
+            </a>
+            <!-- <button style="border: 0px; width:7%;" (click)="goToPreviousGalleryItem()">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </button> -->
+          </div>
+          <div class='col-sm-10' style="text-align: end;">
+            <div class='row'>
+              <div class="col-sm-4">
+                <img style="width: 90%; height: 250px;" src="assets/images/gal1.jpg"
+                  alt="Card image cap">
+            </div>
+      
+            <div class="col-sm-4">
+                <img style="width: 90%; height: 250px;" src="assets/images/gal2.jpg"
+                  alt="Card image cap">
+            </div>
+      
+            <div class="col-sm-4">
+                <img  style="width: 90%; height: 250px;" src="assets/images/gal3.jpg"
+                  alt="Card image cap">
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-1" style="top:100px; text-align:end;">
+            <a style="cursor: pointer;" (click)="gotoNextGalleryitem()">
+              <i class="material-icons"
+              style="font-size: 60px; font-weight: bold; color: black;">
+                chevron_right
+                </i>
+            </a>
+
+              <!-- <button style="border: 0px; width:7%;" (click)="gotoNextGalleryitem()">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </button> -->
+            </div>
+    
+
+        </div>
+        <div class="item itemGallery" [ngClass]="{'active': selectedGalleryItem==1}">
+          <div class="col-sm-1" style="font-size: xx-large;">
+            <button style="border: 0px; width:7%;" (click)="goToPreviousGalleryItem()">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </button>
+          </div>
+
+          <div class='col-sm-10' style="text-align: end;">
+            <div class='row'>
+              <div class="col-sm-4">
+                <img style="width: 90%; height: 250px;" src="assets/images/gal4.jpg"
+                  alt="Card image cap">
+            </div>
+      
+            <div class="col-sm-4">
+                <img style="width: 90%; height: 250px;" src="assets/images/gal5.jpg"
+                  alt="Card image cap">
+            </div>
+      
+            <div class="col-sm-4">
+                <img style="width: 90%; height: 250px;" src="assets/images/gal6.jpg"
+                  alt="Card image cap">
+            </div>
+            </div></div>
+
+          
+
+          <div class="col-sm-1" style="font-size: xx-large;">
+            <button style="border: 0px; width:7%;" (click)="gotoNextGalleryitem()">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+          </div>
+  
+        </div>
+        <div class="item itemGallery" [ngClass]="{'active': selectedGalleryItem==2}">
+
+          <div class="col-sm-1" style="font-size: xx-large;">
+            <button style="border: 0px; width:7%;" (click)="goToPreviousGalleryItem()">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </button>
+          </div>
+
+          <div class='col-sm-10'>
+            <div class='row'>
+
+              <div class="col-sm-4">
+                <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+            
+                    <!--Content-->
+                    <div class="modal-content">
+            
+                      <!--Body-->
+                      <div class="modal-body mb-0 p-0">
+            
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                            allowfullscreen></iframe>
+                        </div>
+            
+                      </div>
+            
+                      <!--Footer-->
+                      <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                      </div>
+            
+                    </div>
+                    <!--/.Content-->
+            
+                  </div>
+                </div>
+                <!--Modal: Name-->
+                <a><img class="img-fluid z-depth-1" style="width: 90%; height: 250px;" src="assets/images/gal7.jpg"
+                    data-toggle="modal" data-target="#modal7"></a>
+            </div>
+      
+            <div class="col-sm-4">
+              <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+          
+                  <!--Content-->
+                  <div class="modal-content">
+          
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+          
+                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                          allowfullscreen></iframe>
+                      </div>
+          
+                    </div>
+          
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+          
+                  </div>
+                  <!--/.Content-->
+          
+                </div>
+              </div>
+              <!--Modal: Name-->
+              <a><img class="img-fluid z-depth-1" style="width: 90%; height: 250px;" src="assets/images/gal8.jpg"
+                  data-toggle="modal" data-target="#modal8"></a>
+            </div>
+      
+            <div class="col-sm-4">
+
+              
+              <!--Modal: Name-->
+              <a><img class="img-fluid z-depth-1" style="width: 90%; height: 250px;" src="assets/images/gal9.jpg"
+                  data-toggle="modal" data-target="#modal9"></a>
+
+            </div>
+
+            </div></div>
+
+          <div class="col-sm-1" style="font-size: xx-large;">
+            <button style="border: 0px; width:7%;" (click)="gotoNextGalleryitem()">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+          </div>
+        </div>
+    
+      </div>
+  
+    </div>
+
+  </div>
+</div>
+
+
+<!-- news -->
+<div id="contact" class="container"  style="width: 100%; padding-left: 0px;
+ padding-right: 0px; border-top: solid orangered;
+ background-image:url(assets/images/dark.jpg);
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-blend-mode: darken;
+ padding-bottom: 40px;">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="container-header" style="margin-bottom:40px;">
+            <span style="color: papayawhip;">ΕΠΙΚΟΙΝΩΝΙΑ</span>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+
+      <!--Google map-->
+      <div id="map-container-google-11" class="z-depth-1-half">
+        <iframe src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1zzpfPgc6_zrTPjM-Ezr_PhSA1LCDOkc64zq7Ovc6xIDEwNiA3NA!6i16"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <br>
+      <!--Buttons-->
+      <div class="row text-center">
+        <div class="col-sm-4" style="font-size: medium;">
+          <a><i style="font-size: 30px; color:orangered" class="material-icons">map</i></a>
+          <p style="color: papayawhip;">San Francisco, CA 94126</p>
+          <p style="color: papayawhip;">United States</p>
+        </div>
+
+        <div class="col-sm-4" style="font-size: medium;">
+          <a><i style="font-size: 30px; color:orangered" class="material-icons">local_phone</i></a>
+          <p style="color: papayawhip;">+ 01 234 567 89</p>
+          <p style="color: papayawhip;">Mon - Fri, 8:00-22:00</p>
+        </div>
+
+        <div class="col-sm-4" style="font-size: medium;">
+          <a><i style="font-size: 30px; color:orangered" class="material-icons">email</i></a>
+          <p style="color: papayawhip;">info@gmail.com</p>
+          <p style="color: papayawhip;">sale@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Body-->
+        <div class="modal-body mb-0 p-0">
+
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <img class="embed-responsive-item" style="width: 100%; height: 100%;" src="assets/images/gal6.jpg"
+            alt="Card image cap">
+          </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+      <!--/.Content-->
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div *ngIf="showCollapsedMenu" id="collapsedMenu">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a  class="active" href="#home">ΑΡΧΙΚΗ</a>
+      <a (click)="navigateToElement('who')">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>
+      <a (click)="navigateToElement('workout')">ΠΡΟΓΡΑΜΜΑΤΑ</a>
+      <a (click)="navigateToElement('gallery')">GALLERY</a>
+      <a (click)="navigateToElement('news')">ΝΕΑ</a>
+      <a (click)="navigateToElement('contact')">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+</div>
+<div class="topnav row">
+  <div  class="col-sm-1 col-xs-1 hamburger">
+    <span style="font-size:30px;cursor:pointer" (click)="alertMessage()">&#9776;</span>
+  </div>
+
+  <div class="col-sm-2 col-xs-2 col-md-3 col-lg-3" style="padding-left: 25px;">
+    <a href="#home" class="logo">
+      <img [ngClass]="{'moveLogo': showCollapsedMenu}" class="logo-image" src="assets/images/bodyWhite2.png" style="width: 175px;" alt="">
+  </a>
+  </div>
+  <div class="col-sm-0 col-xs-0 col-md-0 col-lg-1">
+    <div></div>
+  </div>
+  <div id="fullMenu" class="col-sm-10 col-xs-8 col-md-9 col-lg-8 menu-items" style="margin-top: 25px;">
+    <div class="row" style="float: right;">
+      <a  class="active" href="#home">ΑΡΧΙΚΗ</a>
+      <a (click)="navigateToElement('who')">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>
+      <a (click)="navigateToElement('workout')">ΠΡΟΓΡΑΜΜΑΤΑ</a>
+      <a (click)="navigateToElement('gallery')">GALLERY</a>
+      <a (click)="navigateToElement('news')">ΝΕΑ</a>
+      <a (click)="navigateToElement('contact')">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+    </div>
+  </div>
+  </div>

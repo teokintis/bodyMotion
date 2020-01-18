@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/30b60783-9705-4e36-a56a-e3a2f2dff359/resourceGroups/bodyInMotion/providers/Microsoft.Web/sites/bodyInMotionWebApp",
+    "appService.deploySubpath": "dist\\bodyMotion",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
